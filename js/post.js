@@ -13,6 +13,9 @@ $(function(){
 			var place = $('#post-place').val();
 			$('#post-textarea').val('');
 			$('#post-place').val('');
+			var quantity = $('#posts-quantity').data('quantity') + 1;
+			$('#posts-quantity').html(quantity);
+			$('#posts-quantity').data('quantity', quantity);
 			var time = moment(moment()).format('MM/DD/YYYY') + ' at ' + moment(moment()).format('h:ma');
 			var post_html = '<div class="post row">';
       post_html += '<hr>';
