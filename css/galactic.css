@@ -92,10 +92,6 @@ html, body{
   padding: 0px 10px;
 }
 
-#poster textarea{
-  margin-bottom: 5px;
-}
-
 .post-owner{
   font-weight: bold;
 }
@@ -179,4 +175,37 @@ nav[role=navigation] li a {
 
 .logout-button{
   float: right;
+}
+
+.no-side-margin{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.no-side-padding{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#post-textarea{
+  border-bottom: transparent solid 0px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  resize: none;
+}
+
+#post-place{
+  border-top: rgba(204, 204, 204, 0.4) solid 1px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-right: transparent solid 0px;
+}
+
+#post-submit{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
 }

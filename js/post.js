@@ -10,7 +10,10 @@ $(function(){
 				html: true
 			});
 		} else {
+			var place = $('#post-place').val();
 			$('#post-textarea').val('');
+			$('#post-place').val('');
+			var time = moment(moment()).format('MM/DD/YYYY') + ' at ' + moment(moment()).format('h:ma');
 			var post_html = '<div class="post row">';
       post_html += '<hr>';
       post_html += '<div class="col-md-1 hidden-xs">';
@@ -20,8 +23,10 @@ $(function(){
       post_html += '<div class="post-owner"> Boba Fett</div>'
       post_html += '<div class="post-message">'+ post + '</div>'
       post_html += '<div class="post-timestamp">'
-      post_html += '<span class="time"> Today at 12:00pm</span>'
-      post_html += '<span class="place"> at Death Star</span>'
+      post_html += '<span class="time">'+ time + '</span>'
+      if (place != ""){
+      	post_html += '<span class="place"> from '+ place +'</span>';
+      }
 			post_html += '</div>'
       post_html += '</div>'
       post_html += '</div>'
